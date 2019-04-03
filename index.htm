@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="js/jquery.js"></script><!-- ПОДКЛЮЧАЕМ БИБЛИОТЕКУ JQUERY -->
+<script src="js/jquery-swapsies.js"></script><!-- ПОДКЛЮЧАЕМ СКРИПТ ОБМЕНА ЭЛЕМЕНТОВ -->
+<script src="js/sorting.js"></script><!-- ПОДКЛЮЧАЕМ СКРИПТ СОРТИРОВКИ -->
+<link rel="stylesheet" href="css/style.css" type="text/css" /><!-- ПОДКЛЮЧАЕМ СТИЛИ -->
+<title>Анимированная сортировка</title>
+</head>
+<body>
+	<div id="wrap"><!-- ОБЩИЙ БЛОК - ОБЕРТКА -->
+		<p class="button randomGenerate">Сгенерировать числа</p>
+		<button class="button sorting" disabled>Отсортировать числа</button>
+		<p class="button"><a style="color: #fff; text-decoration: none;" href="http://sergey-oganesyan.ru/javascript-s-primerami/sortirovka-puzyrkom-na-javascript.html">Вернуться к статье</a></p>
+		<div id="instructions"><!-- ИНСТРУКЦИЯ -->
+			<p>Для генерации случайных чисел нажмите на кнопку - "Сгенерировать числа".</p>
+			<p>Для сортировки сгенерированных чисел нажмите на кнопку - "Отсортировать числа".</p>
+		</div><!-- /ИНСТРУКЦИЯ -->
+		<div id="nums"></div>
+		<div id="info"><!-- ИНФОРМАЦИЯ О СОСТОЯНИИ СОРТИРОВКИ -->
+			<span class="result"></span><br>
+			<span class="cur_step"></span><br>
+			Исходные числа: <span class="original_numbers"></span>
+		</div><!-- /ИНФОРМАЦИЯ О СОСТОЯНИИ СОРТИРОВКИ -->
+	</div><!-- /ОБЩИЙ БЛОК - ОБЕРТКА -->
+</body>
+</html>
